@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/regTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/montserratlight"
+            android:gravity="center"
+            android:text="РЕГИСТРАЦИЯ"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/regAvatar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/avatar" />
+
+        <EditText
+            android:id="@+id/regName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button_gray"
+            android:ems="10"
+            android:fontFamily="@font/montserratlight"
+            android:hint="Имя"
+            android:inputType="text"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/regPost"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button_gray"
+            android:ems="10"
+            android:fontFamily="@font/montserratlight"
+            android:hint="Должность"
+            android:inputType="text"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/regEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button_gray"
+            android:ems="10"
+            android:fontFamily="@font/montserratlight"
+            android:hint="Email"
+            android:inputType="text"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/regPhone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button_gray"
+            android:ems="10"
+            android:fontFamily="@font/montserratlight"
+            android:hint="Номер телефона"
+            android:inputType="text"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/regPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button_gray"
+            android:ems="10"
+            android:fontFamily="@font/montserratlight"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/regConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button_gray"
+            android:ems="10"
+            android:fontFamily="@font/montserratlight"
+            android:hint="Подтвердите пароль"
+            android:inputType="textPassword"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/regBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/montserratlight"
+                android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
+                android:textColor="@color/black"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/regLoadingAni"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:visibility="gone"
+                app:lottie_rawRes="@raw/loading"/>
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/regSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserratlight"
+            android:gravity="center"
+            android:text="ВХОД"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

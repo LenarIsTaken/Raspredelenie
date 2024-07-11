@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/acitemAvatar"
+        android:layout_width="60dp"
+        android:layout_height="34dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/avatar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/acitemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Никита"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserratlight"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/acitemEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="nikitaad@gmail.com"
+            android:textSize="10sp"
+            android:fontFamily="@font/montserratlight"/>
+
+    </LinearLayout>
+</LinearLayout>
